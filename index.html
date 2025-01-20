@@ -14,7 +14,7 @@
                         <img id="possession" src="" alt="Possession Image" width="300">
 
                         <script>
-                        const images = ['blank.png','demon.png','goodfortune.png','pentagram.png','question.png','spider.png','spiderweb.png','stars.png'];
+                        const images = ['goodfortune.png','pentagram.png','question.png','spider.png','spiderweb.png','stars.png'];
 
                         function getRandomImage() {
                             const randomIndex = Math.floor(Math.random() * images.length);
@@ -65,17 +65,9 @@ background-color: white;
 color: black;
 background-color: red;
 }
-    
-.bg {  
-    width: 100vw;
-    height: 120%;
-    object-fit: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
- }
-    @media screen and (max-width: 700px) {
+
+
+@media screen and (max-width: 700px) {
 .page {
     max-width: 90%;
 }
