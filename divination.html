@@ -1,0 +1,107 @@
+<head>
+<title>Possession</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+</head>
+<html>
+    <body>
+        <div class="page">
+            <img src="possession-title.png"></img>
+        </div> 
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="divination.html">Possessor</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="content">
+                        <div class="moteur">
+
+                        <img id="possession" src="" alt="Possession Image" width="300">
+
+                        <script>
+                        const images = ['goodfortune.png','pentagram.png','question.png','spider.png','spiderweb.png','stars.png'];
+
+                        function getRandomImage() {
+                            const randomIndex = Math.floor(Math.random() * images.length);
+                            return images[randomIndex];
+                        }
+
+                        document.getElementById('possession').src = 'images/' + getRandomImage();
+                        </script>
+
+                        </div>   
+    
+                        <button onClick="window.location.reload();">RELOAD</button>
+
+        </div> 
+
+    </body>
+</html>
+
+<style>
+body{
+    background-color: #000000;
+    }
+    .page{
+    width: 555px;
+    text-align: center;
+    color: white;
+    margin: 10px auto 20px;
+    }
+    
+    .page img{
+    width: 555px;
+    text-align: center;
+    color: white;
+    margin: 10px auto 0px;
+    font-size: 51px;
+    }
+    
+    button{
+    width: 100px;
+    height: 30px;
+    margin: 50px auto 10px;
+    background-color: white;
+    color: black;
+    background-color: red;
+    }
+    /* Style the navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #fc0303;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+  color: white;
+  text-align: center;
+}
+    
+    @media screen and (max-width: 700px) {
+    .page {
+        max-width: 90%;
+    }
+    .moteur{
+        width: auto;
+    }
+    .page img{
+    width: 88%;
+    }
+    }
+    </style>
+    
